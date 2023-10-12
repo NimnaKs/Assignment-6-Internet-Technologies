@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .gradient-text {
     background: linear-gradient(65deg, #382CC5, #7C86DC);
