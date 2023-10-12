@@ -1,0 +1,19 @@
+#customer_form{
+    margin-top: 40px;
+}
+
+#form_input{
+    margin: 20px;
+}
+
+#table{
+    margin: 20px;
+}
+
+#button{
+    margin-left: -10px;
+}
+
+#button>button{
+   margin: 10px;
+}
