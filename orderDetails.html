@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Order Details Page</title>
-  <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/navBarStyle.css">
-  <link rel="stylesheet" href="assets/css/normalize_css.css">
-  <link rel="stylesheet" href="assets/css/formStyle.css">
+    <meta charset="UTF-8">
+    <title>Order Details Page</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/navBarStyle.css">
+    <link rel="stylesheet" href="assets/css/normalize_css.css">
+    <link rel="stylesheet" href="assets/css/formStyle.css">
 </head>
 <body>
 
-<div id="orderDetails">
-
-  <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+<nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
     <div class="container-fluid">
-      <a id="samplePos" class="navbar-brand gradient-text" href="#">SamplePos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
-          <li class="nav-item">
-            <a class="nav-link gradient-text" aria-current="page" href="index.html#Home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gradient-text" href="customer.html#Customer">Customer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gradient-text" href="item.html#Item">Item</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gradient-text" href="order.html#Order">Order</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active gradient-text" href="#orderDetails">Order Details</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search" id="search">
-          <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
-          <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
-        </form>
-      </div>
+        <a id="samplePos" class="navbar-brand gradient-text" href="#">SamplePos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" aria-current="page" href="index.html#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="customer.html#Customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="item.html#Item">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="order.html#Order">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active gradient-text" href="#orderDetails">Order Details</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" id="search">
+                <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+            </form>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <div id="form">
-    <div class="text-center gradient-text">
-      <h3>Order Details Form</h3>
-    </div>
+<main id="orderDetails">
+    <section>
+        <div id="form">
+            <div class="text-center gradient-text">
+                <h3>Order Details Form</h3>
+            </div>
 
-    <div class="col" id="table">
-      <table class="table ">
-        <thead class="table-primary">
-        <tr>
-          <th scope="col">Order Id</th>
-          <th scope="col">Order Date</th>
-          <th scope="col">Customer Id</th>
-          <th scope="col">Price</th>
-          <th scope="col">Discount</th>
-          <th scope="col">Sub Total</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>2023-08-04</td>
-          <td>1</td>
-          <td>12000</td>
-          <td>10%</td>
-          <td>10800</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>2023-08-04</td>
-          <td>2</td>
-          <td>12000</td>
-          <td>10%</td>
-          <td>10800</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>2023-08-04</td>
-          <td>3</td>
-          <td>12000</td>
-          <td>10%</td>
-          <td>10800</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+            <div class="col" id="table">
+                <table class="table ">
+                    <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Order Id</th>
+                        <th scope="col">Order Date</th>
+                        <th scope="col">Customer Id</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Sub Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2023-08-04</td>
+                        <td>1</td>
+                        <td>12000</td>
+                        <td>10%</td>
+                        <td>10800</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2023-08-04</td>
+                        <td>2</td>
+                        <td>12000</td>
+                        <td>10%</td>
+                        <td>10800</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>2023-08-04</td>
+                        <td>3</td>
+                        <td>12000</td>
+                        <td>10%</td>
+                        <td>10800</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
 
 <script src="assets/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 </body>

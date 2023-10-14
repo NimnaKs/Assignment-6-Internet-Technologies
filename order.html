@@ -11,167 +11,165 @@
 </head>
 <body>
 
-<div id="Order">
-
-    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
-        <div class="container-fluid">
-            <a id="samplePos" class="navbar-brand gradient-text" href="#">SamplePos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
-                    <li class="nav-item">
-                        <a class="nav-link gradient-text" aria-current="page" href="index.html#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link gradient-text" href="customer.html#Customer">Customer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link gradient-text" href="item.html#Item">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active gradient-text" href="#Order">Order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link gradient-text" href="orderDetails.html#orderDetails">Order Details</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search" id="search">
-                    <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
-                    <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-md-6 mt-3">
-                <div class="card" id="invoiceDetails">
-                    <div class="card-header text-center gradient-text">
-                        Invoice Details
-                    </div>
-                    <div class="mb-3 col-md-11 mt-3">
-                        <label for="order_date" class="form-label">Order Date</label>
-                        <input type="date" class="form-control" id="order_date" placeholder="Order Date Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="order_id" class="form-label">Order Id</label>
-                        <input type="number" class="form-control" id="order_id" placeholder="Order Id Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="customer_id" class="form-label">Customer Id</label>
-                        <input type="number" class="form-control" id="customer_id" placeholder="Customer Id Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="customer_name" class="form-label">Customer Name</label>
-                        <input type="number" class="form-control" id="customer_name" placeholder="Customer Name Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="total" class="form-label">Total</label>
-                        <input type="number" class="form-control" id="total" placeholder="Total Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="discount" class="form-label">Discount</label>
-                        <input type="number" class="form-control" id="discount" placeholder="Discount Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="sub_total" class="form-label">Sub Total</label>
-                        <input type="number" class="form-control" id="sub_total" placeholder="Sub Total Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="Cash" class="form-label">Cash</label>
-                        <input type="number" class="form-control" id="Cash" placeholder="Cash Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="balance" class="form-label">Balance</label>
-                        <input type="number" class="form-control" id="balance" placeholder="Balance Here">
-                    </div>
-                    <div class="mt-1 mb-3" id="button">
-                        <button id="submitBtn" type="submit" class="btn btn-success">Purchase</button>
-                        <button id="updateBtn" type="button" class="btn btn-primary">Update</button>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="reset" class="btn btn-warning">Reset</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-3">
-                <div class="card" id="orderDetails">
-                    <div class="card-header text-center gradient-text">
-                        Order Details
-                    </div>
-                    <div class="mb-3 col-md-11 mt-3">
-                        <label for="item_code" class="form-label">Item Code</label>
-                        <input type="number" class="form-control" id="item_code" placeholder="Item Code Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="item_name" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="item_name" placeholder="Item Name Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="price" placeholder="Price Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="qty_on_hand" class="form-label">Qty on Hand</label>
-                        <input type="number" class="form-control" id="qty_on_hand" placeholder="Qty on hand Here">
-                    </div>
-                    <div class="mb-3 col-md-11">
-                        <label for="Qty" class="form-label">Total</label>
-                        <input type="number" class="form-control" id="Qty" placeholder="Qty Here">
-                    </div>
-                    <div class="mt-1 mb-1" id="button1">
-                        <button id="addBtn" type="button" class="btn btn-primary">Add</button>
-                        <button type="reset" class="btn btn-warning">Reset</button>
-                    </div>
-                    <div class="col m-3" id="table">
-                        <table class="table ">
-                            <thead class="table-primary">
-                            <tr>
-                                <th scope="col">Item Code</th>
-                                <th scope="col">Item Name</th>
-                                <th scope="col">Price Per Kg</th>
-                                <th scope="col">Qty On Hand</th>
-                                <th scope="col">Qty</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Pine apple</td>
-                                <td>120</td>
-                                <td>100</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Orange</td>
-                                <td>80</td>
-                                <td>50</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Banana</td>
-                                <td>200</td>
-                                <td>250</td>
-                                <td>10</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+<nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+    <div class="container-fluid">
+        <a id="samplePos" class="navbar-brand gradient-text" href="#">SamplePos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" aria-current="page" href="index.html#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="customer.html#Customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="item.html#Item">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active gradient-text" href="#Order">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gradient-text" href="orderDetails.html#orderDetails">Order Details</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" id="search">
+                <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+            </form>
         </div>
     </div>
+</nav>
 
-
-
-
-</div>
+<main id="Order">
+    <section>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div class="card" id="invoiceDetails">
+                        <div class="card-header text-center gradient-text">
+                            Invoice Details
+                        </div>
+                        <div class="mb-3 col-md-11 mt-3">
+                            <label for="order_date" class="form-label">Order Date</label>
+                            <input type="date" class="form-control" id="order_date" placeholder="Order Date Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="order_id" class="form-label">Order Id</label>
+                            <input type="number" class="form-control" id="order_id" placeholder="Order Id Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="customer_id" class="form-label">Customer Id</label>
+                            <input type="number" class="form-control" id="customer_id" placeholder="Customer Id Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="customer_name" class="form-label">Customer Name</label>
+                            <input type="number" class="form-control" id="customer_name"
+                                   placeholder="Customer Name Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="total" class="form-label">Total</label>
+                            <input type="number" class="form-control" id="total" placeholder="Total Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="discount" class="form-label">Discount</label>
+                            <input type="number" class="form-control" id="discount" placeholder="Discount Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="sub_total" class="form-label">Sub Total</label>
+                            <input type="number" class="form-control" id="sub_total" placeholder="Sub Total Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="Cash" class="form-label">Cash</label>
+                            <input type="number" class="form-control" id="Cash" placeholder="Cash Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="balance" class="form-label">Balance</label>
+                            <input type="number" class="form-control" id="balance" placeholder="Balance Here">
+                        </div>
+                        <div class="mt-1 mb-3" id="button">
+                            <button id="submitBtn" type="submit" class="btn btn-success">Purchase</button>
+                            <button id="updateBtn" type="button" class="btn btn-primary">Update</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="reset" class="btn btn-warning">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card" id="orderDetails">
+                        <div class="card-header text-center gradient-text">
+                            Order Details
+                        </div>
+                        <div class="mb-3 col-md-11 mt-3">
+                            <label for="item_code" class="form-label">Item Code</label>
+                            <input type="number" class="form-control" id="item_code" placeholder="Item Code Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="item_name" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="item_name" placeholder="Item Name Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="price" placeholder="Price Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="qty_on_hand" class="form-label">Qty on Hand</label>
+                            <input type="number" class="form-control" id="qty_on_hand" placeholder="Qty on hand Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="Qty" class="form-label">Total</label>
+                            <input type="number" class="form-control" id="Qty" placeholder="Qty Here">
+                        </div>
+                        <div class="mt-1 mb-1" id="button1">
+                            <button id="addBtn" type="button" class="btn btn-primary">Add</button>
+                            <button type="reset" class="btn btn-warning">Reset</button>
+                        </div>
+                        <div class="col m-3" id="table">
+                            <table class="table ">
+                                <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Item Code</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Price Per Kg</th>
+                                    <th scope="col">Qty On Hand</th>
+                                    <th scope="col">Qty</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Pine apple</td>
+                                    <td>120</td>
+                                    <td>100</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Orange</td>
+                                    <td>80</td>
+                                    <td>50</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Banana</td>
+                                    <td>200</td>
+                                    <td>250</td>
+                                    <td>10</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 
 <script src="assets/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
